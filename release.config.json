@@ -1,6 +1,6 @@
 {
   "branches": ["main"],
-  "repositoryUrl": "https://github.com/Thulya99/Test-Release1",
+  "repositoryUrl": "https://github.com/Thulya99/Test-Release1.git",
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
