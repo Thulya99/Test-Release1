@@ -18,7 +18,7 @@ const { Builder, By, Key, until } = require('selenium-webdriver');
     } finally {
         await driver.quit(); //TS
         console.log("new rules") //test 
-
+//new comment line
         //new comment line
     }
 })();
