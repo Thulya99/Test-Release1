@@ -16,6 +16,9 @@ const { Builder, By, Key, until } = require('selenium-webdriver');
         // let elementText = await driver.findElement(By.css('h1')).getText();
         // console.log('Element text is:', elementText);
     } finally {
-        await driver.quit();
+        await driver.quit(); //TS
+        console.log("new rules") //test 
+
+        //new comment line
     }
 })();
