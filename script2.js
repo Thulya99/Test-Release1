@@ -9,7 +9,7 @@ const { Builder, By, Key, until } = require('selenium-webdriver');
         await driver.get('https://platned.com/contact-us/');
 
         let title = await driver.getTitle();
-        console.log('Page title is:', title);
+        console.log('Page title is :', title);
 
         // await driver.wait(until.elementLocated(By.css('h1')), 10000);
 
