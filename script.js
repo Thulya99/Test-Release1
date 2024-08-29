@@ -11,7 +11,7 @@ const { Builder, By, Key, until } = require('selenium-webdriver');
         let title = await driver.getTitle();
         console.log('Page title is:', title);
 
-        // await driver.wait(until.elementLocated(By.css('h1')), 10000);
+        // await driver.wait(until.elementLocated(By.css('h1')), 10000); test.....
 
         // let elementText = await driver.findElement(By.css('h1')).getText();
         // console.log('Element text is:', elementText);
