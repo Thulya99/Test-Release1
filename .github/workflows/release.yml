@@ -16,12 +16,12 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '20'  # Updated to use Node.js 20
+        node-version: '20'  # Ensure Node.js 20 is used
 
     - name: Install dependencies
       run: npm install
 
     - name: Run Semantic Release
-      uses: semantic-release/semantic-release@v20
+      uses: semantic-release/semantic-release@v3  # Use the correct action version
       env:
         GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
