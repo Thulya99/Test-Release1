@@ -18,6 +18,7 @@ const { Builder, By, Key, until } = require('selenium-webdriver');
     } finally {
         await driver.quit(); //TS
         console.log("new rules") //test 
+        console.log("August")
 
         //new comment line//jdjf
     }
