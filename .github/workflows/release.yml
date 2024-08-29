@@ -8,20 +8,19 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '20'  # Ensure Node.js 20 is used
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
 
-    - name: Install dependencies
-      run: npm install
+      - name: Install dependencies
+        run: npm install
 
-    - name: Run Semantic Release
-      uses: semantic-release/semantic-release@v3  # Use the correct action version
-      env:
-        GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+      - name: Run semantic-release
+        env:
+          GH_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+        run: npx semantic-release
