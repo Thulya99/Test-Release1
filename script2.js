@@ -17,10 +17,10 @@ const { Builder, By, Key, until } = require('selenium-webdriver');
         // console.log('Element text is:', elementText);
     } finally {
         await driver.quit(); //TS
-        console.log("new rules") //test 
+        console.log("new rules") //test 3
 //new comment line
         //new comment lineSSew dsdssss
-        //new comment lineSSew dsds
+        //new comment lineSSew dsdsss
         //new comment lineSSew dsds//new comment lineSSew dsds
         //new comment lineSSew dsds//new comment lineSSew dsds
     }
